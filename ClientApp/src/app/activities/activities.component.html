@@ -1,0 +1,23 @@
+<div *ngIf="activities">
+
+  <p-table [value]="activities">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>ActivityId</th>
+        <th>Title</th>
+        <th>Duration Minutes</th>
+        <th>Color</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-activity>
+      <tr>
+        <td>{{activity.activityId}}</td>
+        <td>{{activity.title}}</td>
+        <td>{{activity.durationMinutes}}</td>
+        <td>{{activity.color}}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+
+  </div>
+

@@ -1,0 +1,28 @@
+<div style="box-sizing: border-box;">
+
+
+  <span style="color: red;">SAASCoreAngular</span>
+  <br/>
+  <br/>
+
+
+  <p>Register</p>
+
+
+  <nav *ngIf="userAuthenticated">
+    <div>
+      <a routerLink="/">Home</a>
+      <a routerLink="/admin" *ngIf="isAdmin">Admin</a>
+      <a (click)="logout()">Logout</a>
+    </div>
+  </nav>
+
+
+
+
+          <router-outlet></router-outlet>
+
+
+      
+
+</div>
